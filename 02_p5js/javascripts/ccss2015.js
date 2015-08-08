@@ -10,5 +10,8 @@ function draw(){
 }
 
 function paths(){
-  return toAbsoluteSVG(CCSSJSON, 1.0, mouseX, mouseY);
+  size = 1.0;
+  x = mouseX - 100;
+  y = mouseY - 100;
+  return toAbsoluteSVG(CCSSJSON, size, x, y);
 }
