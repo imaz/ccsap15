@@ -1,4 +1,5 @@
 function setup(){
+  console.log(getPaths());
   createCanvas(800, 200);
   background(255);
   fill(233, 233, 233, 255);
