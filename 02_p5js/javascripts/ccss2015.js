@@ -1,8 +1,4 @@
-var paths;
-
 function setup(){
-  paths = toAbsoluteSVG(CCSSJSON, 1.0, 0, 0);
-
   createCanvas(800, 200);
   background(255);
   fill(233, 233, 233, 255);
@@ -10,5 +6,9 @@ function setup(){
 }
 
 function draw(){
-  drawSVG(paths);
+  drawSVG(paths());
+}
+
+function paths(){
+  return toAbsoluteSVG(CCSSJSON, 1.0, mouseX, mouseY);
 }
