@@ -18,7 +18,7 @@ function getPaths(){
   if (mouseX == 0 && mouseY == 0) return null;
 
   size = 1.0;
-  x = mouseX - 100;
-  y = mouseY - 100;
+  x = mouseX - 100 + random(5);
+  y = mouseY - 100 + random(5);
   return toAbsoluteSVG(CCSSJSON, size, x, y);
 }
