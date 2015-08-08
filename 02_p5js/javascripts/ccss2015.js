@@ -6,10 +6,15 @@ function setup(){
 }
 
 function draw(){
-  drawSVG(paths());
+  paths = getPaths();
+  if (paths) {
+    drawSVG(paths);
+  }
 }
 
-function paths(){
+function getPaths(){
+  if (mouseX == 0 && mouseY == 0) return null;
+
   size = 1.0;
   x = mouseX - 100;
   y = mouseY - 100;
