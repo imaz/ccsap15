@@ -4,6 +4,7 @@ function setup(){
 }
 
 function draw(){
+  background(0);
   fill(235, 235, 255, 200);
   textSize(24);
   textFont('Helvetica');
