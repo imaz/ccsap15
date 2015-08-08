@@ -4,4 +4,8 @@ function setup(){
 }
 
 function draw(){
+  fill(235, 235, 255, 200);
+  textSize(24);
+  textFont('Helvetica');
+  text('Hello, world!', 10, 100);
 }
