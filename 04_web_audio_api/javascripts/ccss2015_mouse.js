@@ -14,11 +14,14 @@ function draw(){
   }
 }
 
+var SVG_RANDOM_DEFAULT = 5;
+var svg_random = SVG_RANDOM_DEFAULT;
+
 function getPaths(){
   if (mouseX === 0 && mouseY === 0) return null;
 
-  size = 1.0;
-  x = mouseX - 100 + random(5);
-  y = mouseY - 100 + random(5);
+  var size = 1.0;
+  var x = mouseX - 100 + random(svg_random);
+  var y = mouseY - 100 + random(svg_random);
   return toAbsoluteSVG(CCSSJSON, size, x, y);
 }

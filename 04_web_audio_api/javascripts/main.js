@@ -29,6 +29,7 @@ $(function(){
       level += Math.abs(sin[i]);
     }
     showChar(level);
+    changeSvg(level);
   };
   sensor.connect(ctx.destination);
 
@@ -49,6 +50,14 @@ $(function(){
         elem.trigger('stopRumble');
         left = !left;
       }, 300);
+    }
+  }
+
+  function changeSvg(level){
+    if (level > 70) {
+      window.svg_random = 20;
+    } else {
+      window.svg_random = SVG_RANDOM_DEFAULT;
     }
   }
 });
