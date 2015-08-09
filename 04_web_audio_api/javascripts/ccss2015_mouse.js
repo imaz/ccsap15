@@ -1,15 +1,16 @@
 function setup(){
   createCanvas(800, 200);
-  background(255);
-  fill(233, 233, 233, 255);
-  stroke(100, 100, 100, 255);
 }
 
+var fill_random = 233;
+
 function draw(){
-  background(255);
+  background(0, 0, 0);
 
   paths = getPaths();
   if (paths) {
+    fill(180, fill_random, 233, fill_random);
+    stroke(100, 100, 100, 255);
     drawSVG(paths);
   }
 }

@@ -55,8 +55,10 @@ $(function(){
 
   function changeSvg(level){
     if (level > 70) {
-      window.svg_random = 20;
+      window.fill_random = Math.random() * 215 + 45;
+      window.svg_random = 10;
     } else {
+      window.fill_random = Math.random() * 180 + 23;
       window.svg_random = SVG_RANDOM_DEFAULT;
     }
   }
