@@ -56,10 +56,10 @@ $(function(){
   function changeSvg(level){
     if (level > 70) {
       window.fill_random = Math.random() * 215 + 45;
-      window.svg_random = 10;
+      window.svg_adjustment_y = 20;
     } else {
-      window.fill_random = Math.random() * 180 + 23;
-      window.svg_random = SVG_RANDOM_DEFAULT;
+      window.fill_random = Math.random() * 140 + 23;
+      window.svg_adjustment_y = SVG_ADJUSTMENT_Y_DEFAULT;
     }
   }
 });
