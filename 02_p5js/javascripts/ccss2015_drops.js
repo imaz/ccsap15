@@ -34,7 +34,7 @@ function drawLogo(paths){
 
 function updateDrops(){
   var drop = {
-    a: random() * 100 + 20,
+    a: random() * 10 + 60,
     r: random() * 224 + 30,
     g: random() * 224 + 30,
     b: random() * 224 + 30,
