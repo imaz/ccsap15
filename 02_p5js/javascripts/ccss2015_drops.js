@@ -1,5 +1,8 @@
+var CANVAS_WIDTH = 800;
+var CANVAS_HEIGHT = 200;
+
 function setup(){
-  createCanvas(800, 200);
+  createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
   background(255);
   fill(233, 233, 233, 255);
   stroke(100, 100, 100, 255);
