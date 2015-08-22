@@ -1,15 +1,16 @@
 var CANVAS_WIDTH = 800;
 var CANVAS_HEIGHT = 200;
 
+var paths = getPaths();
+
 function setup(){
   createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
-  background(255);
-
-  var paths = getPaths();
-  drawLogo(paths);
 }
 
 function draw(){
+  background(255);
+
+  drawLogo(paths);
   drawDrops();
 }
 
