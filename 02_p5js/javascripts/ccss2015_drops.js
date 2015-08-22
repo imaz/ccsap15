@@ -13,19 +13,19 @@ function draw(){
   drawDrops();
 }
 
+function getPaths(){
+  var size = 1.0;
+  var x = 0;
+  var y = 0;
+  return toAbsoluteSVG(CCSSJSON, size, x, y);
+}
+
 function drawLogo(paths){
   if (paths) {
     fill(233, 233, 233, 255);
     stroke(100, 100, 100, 255);
     drawSVG(paths);
   }
-}
-
-function getPaths(){
-  size = 1.0;
-  x = 0;
-  y = 0;
-  return toAbsoluteSVG(CCSSJSON, size, x, y);
 }
 
 function drawDrops(){
