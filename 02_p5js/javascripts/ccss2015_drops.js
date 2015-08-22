@@ -36,8 +36,8 @@ function drawDrops(){
   fill(r, g, b, 30);
   stroke(100, 100, 100, 5);
 
-  var x = random() * CANVAS_WIDTH;
-  var y = random() * CANVAS_HEIGHT;
-  var dot_size = random() * 50 + 20;
+  var x = mouseX + (random() * 40 - 20);
+  var y = mouseY + (random() * 40 - 20);
+  var dot_size = random() * 30 + 5;
   ellipse(x, y, dot_size, dot_size)
 }
