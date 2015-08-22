@@ -4,8 +4,6 @@ var CANVAS_HEIGHT = 200;
 function setup(){
   createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
   background(255);
-  fill(233, 233, 233, 255);
-  stroke(100, 100, 100, 255);
 }
 
 function draw(){
@@ -13,6 +11,8 @@ function draw(){
 
   paths = getPaths();
   if (paths) {
+    fill(233, 233, 233, 255);
+    stroke(100, 100, 100, 255);
     drawSVG(paths);
   }
 }
