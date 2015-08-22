@@ -34,7 +34,7 @@ function drawDrops(){
   var g = random() * 224 + 30;
   var b = random() * 224 + 30;
   fill(r, g, b, 30);
-  stroke(100, 100, 100, 5);
+  stroke(r, g, b, 50);
 
   var x = mouseX + (random() * 40 - 20);
   var y = mouseY + (random() * 40 - 20);
