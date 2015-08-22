@@ -4,17 +4,20 @@ var CANVAS_HEIGHT = 200;
 function setup(){
   createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
   background(255);
+
+  var paths = getPaths();
+  drawLogo(paths);
 }
 
 function draw(){
-  background(255);
+  drawDrops();
+}
 
-  paths = getPaths();
+function drawLogo(paths){
   if (paths) {
     fill(233, 233, 233, 255);
     stroke(100, 100, 100, 255);
     drawSVG(paths);
-    drawDrops();
   }
 }
 
