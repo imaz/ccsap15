@@ -52,6 +52,8 @@ function updateDrops(){
 }
 
 function drawDrops(){
+  if (mouseX == 0 && mouseY == 0) return;
+
   for (drop of drops) {
     ddd = drop;
     fill(drop['r'], drop['g'], drop['b'], drop['a']);
