@@ -38,6 +38,8 @@ function getPaths(){
 }
 
 function updateLogo(){
+  if (!(10 < mouseY && mouseY < CANVAS_HEIGHT)) return;
+
   var upranges = typeRanges.filter(function(range){
     return range['min'] <= mouseX && mouseX <= range['max'];
   });
