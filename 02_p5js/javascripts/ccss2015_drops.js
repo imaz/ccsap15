@@ -13,7 +13,9 @@ function draw(){
 
   drawLogo(paths);
 
-  updateDrops()
+  if (frameCount % 3 === 0) {
+    updateDrops();
+  }
   drawDrops();
 }
 
