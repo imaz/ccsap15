@@ -37,12 +37,12 @@ function drawLogo(paths){
 function updateDrops(){
   var drop = {
     a: random() * 10 + 60,
-    r: random() * 224 + 30,
-    g: random() * 224 + 30,
-    b: random() * 224 + 30,
-    x: mouseX + (random() * 40 - 20),
-    y: mouseY + (random() * 40 - 20),
-    dot_size: random() * 30 + 5
+    r: random() * 225 + 30,
+    g: random() * 225 + 30,
+    b: random() * 225 + 30,
+    x: mouseX + (random() * 50 - 25),
+    y: mouseY + (random() * 50 - 25),
+    dot_size: random() * 30 + 10
   };
   drops.push(drop);
 
